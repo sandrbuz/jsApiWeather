@@ -1,0 +1,11 @@
+.wthr-item {
+  border: 1px solid black;
+  width: 200px;
+  height: 300px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.city {
+  font-size: 40px;
+}
