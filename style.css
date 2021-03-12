@@ -1,11 +1,30 @@
-.wthr-item {
-  border: 1px solid black;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 70px;
+  text-align: center;
+  margin: 100px 0;
+}
+.container {
+  width: 1000px;
+  margin: auto;
+}
+.wthr-Spb {
+  border: 3px solid green;
   width: 200px;
   height: 300px;
   text-align: center;
   padding-top: 30px;
 }
 
-.city {
+.Spb-city {
   font-size: 40px;
+  margin-bottom: 40px;
+  color: green;
+}
+.Spb-temp {
+  margin-bottom: 30px;
 }
