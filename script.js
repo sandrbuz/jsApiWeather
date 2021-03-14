@@ -45,7 +45,8 @@ fetch('http://api.openweathermap.org/data/2.5/weather?id=536203&appid=655fdcf1ae
         console.log(data);
         document.querySelector('.Spb-city').textContent = data.name;
         document.querySelector('.Spb-temp').innerHTML = Math.round(data.main.temp - 273) + '&deg';
-        document.querySelector('.Spb-clouds').textContent = data.weather[0][];
+        document.querySelector('.Spb-weather').textContent = data.weather[0]['description'];
+        document.querySelector('.Spb-iqon').innerHTML = '<img src="https://openweathermap.org/img/wn/' + data.weather[0]['icon'] + '@2x.png">';
 
         // https://openweathermap.org/img/wn/04n@2x.png
     })
