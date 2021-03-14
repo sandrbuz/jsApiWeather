@@ -22,9 +22,12 @@ h1 {
 
 .Spb-city {
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: green;
 }
 .Spb-temp {
-  margin-bottom: 40px;
+  margin-bottom: 0px;
+}
+.Spb-weather {
+  margin-top: -20px;
 }
