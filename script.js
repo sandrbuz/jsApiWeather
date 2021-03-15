@@ -124,15 +124,31 @@ for (i = 0; i < buttons.length; i += 1) {
 
         const cityName = event.target.textContent;
         console.log(cityName);
+        ;
         fetch(`http://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=655fdcf1aed1280abf8e870e95b28149`)
             .then(resp => resp.json())
             .then(data => {
-                console.log(data)
-
+                // console.log(data)
+                document.querySelector('.city').textContent = data.name;
+                document.querySelector('.temp').innerHTML = Math.round(data.main.temp - 273) + '&deg';
+                document.querySelector('.weather').textContent = data.weather[0]['description'];
+                document.querySelector('.icon').innerHTML = '<img src="https://openweathermap.org/img/wn/' + data.weather[0]['icon'] + '@2x.png">';
             })
 
 
     })
 }
 
+// function Ms() {
+//     fetch('http://api.openweathermap.org/data/2.5/weather?id=524894&appid=655fdcf1aed1280abf8e870e95b28149')
+//         .then(resp => resp.json())
+//         .then(data => {
+//             console.log(data)
+//             document.querySelector('.Msc-city').textContent = data.name;
+//         })
+// }
 
+
+// let Msc = document.querySelector('.btn-Moscow');
+
+// Msc.addEventListener('click', Ms);

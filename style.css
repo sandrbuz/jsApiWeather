@@ -12,7 +12,7 @@ h1 {
   width: 1000px;
   margin: auto;
 }
-.wthr-Spb {
+.wthr {
   border: 3px solid green;
   width: 200px;
   height: 300px;
@@ -20,14 +20,14 @@ h1 {
   padding-top: 30px;
 }
 
-.Spb-city {
+.city {
   font-size: 40px;
   margin-bottom: 10px;
   color: green;
 }
-.Spb-temp {
+.temp {
   margin-bottom: 0px;
 }
-.Spb-weather {
-  margin-top: -20px;
+.weather {
+  /* margin-top: -20px; */
 }
