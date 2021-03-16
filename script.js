@@ -85,9 +85,9 @@
 // buttons requests
 
 
-const button = document.querySelector('.city-btn');
 
-const buttons = document.querySelectorAll('.city-btn');
+
+
 
 // buttons[0].addEventListener('click', function (event) {
 
@@ -116,7 +116,7 @@ const buttons = document.querySelectorAll('.city-btn');
 //         .then(data => console.log(data))
 
 // })
-
+const buttons = document.querySelectorAll('.city-btn');
 
 for (i = 0; i < buttons.length; i += 1) {
 
@@ -139,16 +139,3 @@ for (i = 0; i < buttons.length; i += 1) {
     })
 }
 
-// function Ms() {
-//     fetch('http://api.openweathermap.org/data/2.5/weather?id=524894&appid=655fdcf1aed1280abf8e870e95b28149')
-//         .then(resp => resp.json())
-//         .then(data => {
-//             console.log(data)
-//             document.querySelector('.Msc-city').textContent = data.name;
-//         })
-// }
-
-
-// let Msc = document.querySelector('.btn-Moscow');
-
-// Msc.addEventListener('click', Ms);
